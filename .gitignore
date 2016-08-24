@@ -1,0 +1,8 @@
+WebContent/resources/
+node_modules/
+WebContent/META-INF
+WebContent/WEB-INF
+.classpath
+.project
+.settings
+src/

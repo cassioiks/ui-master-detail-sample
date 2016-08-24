@@ -1,0 +1,50 @@
+<core:View
+	controllerName="sap.ui.demo.myFiori.view.Detail"
+	xmlns="sap.m"
+	xmlns:form="sap.ui.layout.form"
+	xmlns:core="sap.ui.core" >
+	<Page
+		title="Flights"
+		class="sapUiFioriObjectPage"
+		navButtonPress="handleNavButtonPress" >
+		<Table
+		items="{ToFlights}"
+		>
+		<headerToolbar>
+			<Toolbar>
+				<Title text="Flights" level="H2"/>
+			</Toolbar>
+		</headerToolbar>
+		<columns>
+			<Column>
+				<Text text="Airline ID" />
+			</Column>
+			<Column>
+				<Text text="Connection ID" />
+			</Column>
+			<Column>
+				<Text text="Flight Date" />
+			</Column>
+			<Column
+				hAlign="Right">
+				<Text text="Price" />
+			</Column>
+		</columns>
+		<items>
+			<ColumnListItem>
+				<cells>
+					<ObjectIdentifier
+						title="{Carrid}"/>
+					<Text
+						text="{Connid}" />
+					<Text
+						text="{Fldate}" />
+					<ObjectNumber
+							number="{Price}"
+							unit="{Currency}" />
+				</cells>
+			</ColumnListItem>
+		</items>
+	</Table>
+	</Page>
+</core:View>

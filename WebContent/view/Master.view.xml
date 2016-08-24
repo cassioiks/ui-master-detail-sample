@@ -1,0 +1,28 @@
+<core:View
+	controllerName="sap.ui.demo.myFiori.view.Master"
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core" >
+	<Page
+		title="Airlines" >
+		<subHeader>
+			<Bar>
+				<contentLeft>
+					<SearchField
+						search="handleSearch"
+						width="100%" >
+					</SearchField>
+				</contentLeft>
+			</Bar>
+		</subHeader>
+		<List
+			id="list"
+			select="handleListSelect"
+			items="{/AirlineSet}" >
+			<StandardListItem
+				press="handleListItemPress"
+				title="{Carrname}"
+							type="Navigation">
+			</StandardListItem>
+		</List>
+	</Page>
+</core:View>
