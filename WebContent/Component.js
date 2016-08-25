@@ -14,7 +14,7 @@ sap.ui.core.UIComponent.extend("sap.ui.demo.myFiori.Component", {
 
 		// set data model on root view
 		// var oModel = new sap.ui.model.json.JSONModel("model/mock.json");
-		var oModel = new sap.ui.model.odata.v2.ODataModel("/model");
+		var oModel = new sap.ui.model.odata.v2.ODataModel("/model/");
 		oView.setModel(oModel);
 
 		// set i18n model

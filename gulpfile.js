@@ -11,7 +11,7 @@ gulp.task('webserver', function() {
       proxies: [
       		{
       			source: '/model',
-      			target:'http://dkasub.corp.lego.com:21000/sap/opu/odata/sap/Z_GATEWAY_TRAINING_XX_SRV'
+      			target:'YOUR_SERVICE_ENDPOINT'
       		}
       	]
     }));
