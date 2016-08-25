@@ -13,4 +13,4 @@
 2. Edit `Web.xml` and replace `YOUR_SERVICE_ENDPOINT` with your service endpoint
 3. Deploy project in local Tomcat server
 
-[1] http://openui5.org/download.html
+[1]:http://openui5.org/download.html
